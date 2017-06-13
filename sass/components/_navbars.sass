@@ -1,0 +1,70 @@
+.navbar
+  display: flex
+  justify-content: space-around
+
+
+.logo img
+  height: 50px
+
+.logo img:hover
+  color: #dc7725
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+
+li
+  float: left
+
+
+li a, .dropbtn
+  display: inline-block
+  color: white
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+
+
+li a:hover, .dropdown:hover .dropbtn
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  background: #404040 url('../img/btn-navarrow.png')
+  background-repeat: no-repeat
+  background-position: right
+  padding-right: 30px
+
+
+.dropdown
+  display: inline-block
+  background-image: url('../img/btn-navarrow.png')
+  background-repeat: no-repeat
+  background-position: right
+  padding: 0 10px
+
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: #404040
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index: 1
+
+
+.dropdown-content a
+  color: #BDBDB7
+  padding: 12px 16px
+  text-decoration: none
+  display: block
+  text-align: left
+  border-bottom: 0.5px solid #BDBDB7
+
+
+.dropdown-content a:hover
+  background-color: #f1f1f1
+
+.dropdown:hover .dropdown-content
+  display: block
