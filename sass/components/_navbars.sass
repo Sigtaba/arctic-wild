@@ -9,26 +9,32 @@
 .logo img:hover
   color: #dc7725
 
-ul
+.navbar ul
   list-style-type: none
   margin: 0
   padding: 0
   overflow: hidden
 
 
-li
+.navbar li
   float: left
+  letter-spacing: 2px
 
+.navbar a
+  font-family: fjalla
+  line-height: 50px
+  font-size: 15px
 
 li a, .dropbtn
   display: inline-block
   color: white
   text-align: center
-  padding: 14px 16px
+  padding: 0 16px
   text-decoration: none
 
 
-li a:hover, .dropdown:hover .dropbtn
+
+li .dropdown:hover, .dropdown:hover .dropbtn
   border-top-left-radius: 5px
   border-top-right-radius: 5px
   background: #404040 url('../img/btn-navarrow.png')
@@ -68,3 +74,32 @@ li a:hover, .dropdown:hover .dropbtn
 
 .dropdown:hover .dropdown-content
   display: block
+
+.collage-navbar
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 80px
+
+.collage-navbar li
+  display: inline-block
+  line-height: 40px
+
+#dropdown-collage
+  border-left: 1px solid #5d5d5a
+  margin-left: 15px
+  padding-left: 15px
+  & > a
+    color: #dc7725
+
+.search
+  background: url("../img/btn-search.png") top right no-repeat
+  padding-right: 30px
+  padding-top: 10px
+
+
+.search a
+  color: #BDBDB7
+  text-decoration: none
+  &:hover
+    color: #fff
